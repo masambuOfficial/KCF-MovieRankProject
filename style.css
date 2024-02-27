@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #2e2e2e;
+}
+/* Desktop-nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    padding: 0px 140px;
+    background-color: #2e2e2e;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 0.7rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+a > span{
+    color: #2FC4EC;
+}
+a > span:hover{
+    color: white;
+}
+.logo a:hover{
+    color: #2FC4EC;
+    transition: 0.2s;
+}
+
+.Main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 500px;
+    height: 30vh;
+}
+.Main-title h1{
+    font-size: 3rem;
+}
+.Main-title p{
+    font-size: 1.5rem;
+}
+/* Hero Image */
+.hero{
+    background-image: url(/img/shuri-black-panther-2.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#fav{
+    text-align: center;
+}
+.hero a{
+    padding:10px 30px;
+    background-color: #2e2e2e;
+    border-radius: 5px;
+    border: none;
+    margin-top: 18%;
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+/* Main Content */
+
+.container{
+    padding: 40px 500px;
+}
+.container h3{
+    margin: 10px 0 16px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 300;
+}
+.categories{
+    margin-bottom: 16px;
+}
+.container h2{
+    margin: 50px 0px 30px 0px;
+    border-bottom: 1px solid #2e2e2e;
+}
+.categories ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: start;
+    list-style: none;
+}
+.categories ul li a{
+    text-decoration: none;
+    color: #2e2e2e;
+}
+
+.topFive ul {
+    display: flex;
+    gap: 1rem;
+}
+.topFive ul li{
+    list-style: none;
+}
+.topFive ul li img{
+    width: 100%;
+}
+.tag{
+    background-color:#2FC4EC;
+    padding: 10px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
