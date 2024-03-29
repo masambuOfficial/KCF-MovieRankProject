@@ -1,0 +1,119 @@
+@media screen and (max-width: 600px) {
+    /* Styling the NavBar when the screen is 960px or less */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+        padding: 0px 20px;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+    }
+    .nav-links{
+        display: none;
+    }
+    .dropdown_menu{
+        /* position: relative; */
+        display: inline-block;
+    }
+    .dropdown_icon{
+        display: flex;
+        justify-content: end;
+    }
+    .dropdown_icon img{
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .dropdown_nav_links {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+    .dropdown_nav_links a {
+        color: black;
+        padding: 10px 40px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown_menu:hover .dropdown_nav_links {
+        display: block;
+        overflow-y: scroll;
+    }
+
+    /* Styling the Title and paragraph text */
+    #hero_section{
+        height: 100vh;
+        overflow: scroll;
+    }
+    .hero_section_title h1{
+        font-size: 1.5rem;
+        padding: 0px 5px;
+        line-height: 30px;
+    }
+    .hero_section_title p{
+        font-size: 1rem;
+        padding: 0px 20px;
+    }
+    .hero_section_image .btn{
+        align-items: flex-end;
+        padding-bottom: 20px;
+    }
+    .hero_section_image{
+        height: 100vh;
+    }
+
+    /* Styling Top-5 Movies */
+    #categories_section{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .categories_container{
+        width: 100%;
+    }
+    .topFive_container{
+        width: 100%;
+        padding: 15px;
+    }
+    .topFive_items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 20px;
+    }
+    .topFive_items img{
+        width: 100%;
+    }
+    .rank{
+        width: 100%;
+    }
+    footer h1{
+        font-size: 1.5rem;
+    }
+    footer p{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (min-width: 600px) {
+    nav{
+        gap: 2rem;
+        padding: 0px;
+    }
+    nav .nav-links {
+        display: flex;
+        align-items: center;
+    }
+    
+    footer{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 2.5rem; 
+    }
+}
