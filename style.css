@@ -4,18 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
     font-family: 'Poppins', sans-serif;
     color: #2e2e2e;
-    position: relative;
 }
 /* Desktop-nav */
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 40px;
+    height: 70px;
     padding: 0px 140px;
     background-color: #2e2e2e;
     position: fixed;
@@ -26,7 +23,7 @@ nav{
     display: flex;
     gap: 2rem;
     list-style: none;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 nav a{
     color: white;
@@ -43,89 +40,126 @@ a > span:hover{
     color: #2FC4EC;
     transition: 0.2s;
 }
-
-.Main-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0px 250px;
-    height: 30vh;
-    text-align: center;
+/* Hero Section Styles */
+#hero_section{
+    height: 100vh;
+    overflow: hidden;
 }
-.Main-title h1{
+.hero_section{
+    padding-top: 70px;
+    height: 100%;
+}
+.hero_section_title{
+    text-align: center;
+    border: 1px solid pink;
+    height:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero_section_title h1{
     font-size: 3rem;
 }
-.Main-title p{
+.hero_section_title p{
     font-size: 1.5rem;
 }
-/* Hero Image */
-.hero{
+.hero_section_image{
     background-image: url(/img/shuri-black-panther-2.jpg);
-    height: 70vh;
+    height: 70%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-#fav{
-    text-align: center;
-}
-.hero a{
-    padding:10px 30px;
-    background-color: #2e2e2e;
-    border-radius: 5px;
-    border: none;
-    margin-top: 18%;
-    text-decoration: none;
-    color: white;
-}
-.btn{
+
+.hero_section_image .btn{
     display: flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-end;
+    height: 95%;
+}
+.btn a{
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background-color: #2FC4EC;
+    color: white;
+}
+.btn a:hover{
+    background: none;
+    border: 2px solid #2FC4EC;
+    color: #2FC4EC;
 }
 /* Main Content */
+/* Categories */
 
-.container{
-    padding: 40px 250px;
-    height: 100vh;
-}
-.container h3{
-    margin: 10px 0 16px;
-    font-size: 30px;
-    line-height: 42px;
-    font-weight: 300;
-}
-.categories{
-    margin-bottom: 16px;
-}
-.container h2{
-    margin: 50px 0px 30px 0px;
-    border-bottom: 1px solid #2e2e2e;
-    padding-bottom:10px;
-}
-.topFive ul {
+#categories_section{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categories_container{
+    width: 70%;
+    margin: 50px 0px;
+}
+#topFive{
+    display: flex;
+    justify-content: center;
+}
+.topFive_container{
+    width: 70%;
+}
+.topFive_items{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
     gap: 1rem;
+    margin: 50px 0px;
 }
-.topFive ul li{
-    list-style: none;
-}
-.topFive ul li img{
+.itemImage{
     width: 100%;
 }
-.tag{
-    background-color:#2FC4EC;
+.itemImage img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.trailer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #2e2e2e;
     padding: 10px;
-    margin-top: -5px;
-    margin-bottom: 10px;
-    cursor: pointer;
 }
-footer{
-    padding: 20px 0px;
+.trailer a{
+    text-decoration: none;
+    color: #2FC4EC;
+}
+.rank{
+    display: flex;
+    width: 100%;
+}
+.rank_number{
+    background-color: #2FC4EC;
+    padding: 0px 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
-footer h1 a{
+.rank_title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #2FC4EC;
+    width: 100%;
+    padding-left: 10px;
+    overflow-wrap: break-word;
+}
+#footer_section{
+    border-top: 1px solid;
+    text-align: center;
+    padding: 40px;
+}
+#footer_section h1 a{
     text-decoration: none;
 }
 
@@ -190,120 +224,4 @@ footer h1 a{
     }
     .dropdown_menu{
         display: none;
-    }
-
-    @media screen and (max-width: 600px) {
-        /* Styling the NavBar when the screen is 960px or less */
-        nav{
-            display: flex;
-            justify-content: space-between;
-            gap: 5rem;
-            padding: 0px 20px;
-            align-items: center;
-            height: 70px;
-            width: 100%;
-        }
-        .nav-links{
-            display: none;
-        }
-        .dropdown_menu{
-            /* position: relative; */
-            display: inline-block;
-        }
-        .dropdown_icon{
-            display: flex;
-            justify-content: end;
-        }
-        .dropdown_icon img{
-            width: 20%;
-            display: flex;
-            align-items: center;
-        }
-        .dropdown_nav_links {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            }
-        .dropdown_nav_links a {
-            color: black;
-            padding: 10px 40px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown_menu:hover .dropdown_nav_links {
-            display: block;
-            overflow-y: scroll;
-        }
-
-        /* Styling the Title and paragraph text */
-        .Main-title{
-            padding: 70px 0px 0px 0px;
-        }
-        .Main-title h1{
-            font-size: 1.5rem;
-        }
-        .Main-title p{
-            font-size: 1rem;
-            padding: 0px 20px
-        }
-        .btn{
-            height: 70vh;
-            align-items: flex-end;
-            padding-bottom: 20px;
-        }
-
-        /* Styling the Main-Content */
-        .container{
-            padding:0px 20px;
-        }
-        .topFive ul {
-            width: 100%;
-            height: 60vh;
-            padding-bottom: 20px;
-            overflow-x: scroll;
-            flex-direction: column;
-        }
-
-        footer{
-            border-top: 1px solid #2e2e2e;
-            padding: 10px 0px;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            height: 2.5rem; 
-        }
-        footer h1{
-            font-size: 1.5rem;
-        }
-        footer p{
-            font-size: 0.6rem;
-        }
-    }
-    @media screen and (min-width: 600px) {
-        nav{
-            gap: 2rem;
-            padding: 0px;
-        }
-        nav .nav-links {
-            display: flex;
-            align-items: center;
-        }
-        .container{
-            padding:0px 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content:center;
-        }
-        .Main-title{
-            padding: 30px 0px 0px 0px;
-        }
-        footer{
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            height: 2.5rem; 
-        }
     }
