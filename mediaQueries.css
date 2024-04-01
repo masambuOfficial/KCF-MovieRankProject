@@ -93,6 +93,7 @@
     .rank{
         width: 100%;
     }
+
     footer h1{
         font-size: 1.5rem;
     }
@@ -109,7 +110,6 @@
         display: flex;
         align-items: center;
     }
-    
     footer{
         width: 100%;
         position: absolute;

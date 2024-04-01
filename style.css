@@ -100,6 +100,11 @@ a > span:hover{
 .categories_container{
     width: 70%;
     margin: 50px 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.categories_container h2{
+    margin-bottom: 10px;
 }
 #topFive{
     display: flex;
@@ -170,8 +175,8 @@ a > span:hover{
     color: #2e2e2e;
     padding: 10px 35px;
     font-size: 16px;
-    font-family: "Barlow";
-    font-weight: 700;
+    font-family: "Poppins";
+    font-weight: 500;
     border: none;
     display: flex;
     justify-content: center;
