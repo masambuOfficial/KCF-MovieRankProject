@@ -2,6 +2,8 @@
     background-color: #ccc;
     padding-top: 70px;
     height: 170px;
+    display: flex;
+    align-items: center;
 }
 
 /* Genre Container Styles */
@@ -78,6 +80,7 @@
     width: 70%;
     margin: 0px auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2e2e2e;
 }
 
 .simple_nav a{
